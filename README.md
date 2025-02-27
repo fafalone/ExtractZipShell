@@ -66,8 +66,7 @@ Requires Windows Vista or newer.
         End If
         
         Dim siZip As IShellItem
-        Dim siDest As IShellItem
-        Dim siChild As IShellItem
+        Dim siDest As IShellItem 
         Dim pEnum As IEnumShellItems
         Dim pCopy As New FileOperation
         Dim lRet As Long
