@@ -53,6 +53,8 @@ Class Form1
         End If
         ExtractByShell = lRet
     End Function
+
+
     Private Function ExtractByShellSimplfied(pszZip As String, pszDest As String) As Long
         If PathFileExistsW(StrPtr(pszZip)) = 0 Then
             ExtractByShellSimplfied = ERROR_FILE_NOT_FOUND
@@ -63,8 +65,7 @@ Class Form1
         End If
         
         Dim siZip As IShellItem
-        Dim siDest As IShellItem
-        Dim siChild As IShellItem
+        Dim siDest As IShellItem 
         Dim pEnum As IEnumShellItems
         Dim pCopy As New FileOperation
         Dim lRet As Long
