@@ -54,6 +54,8 @@ Requires Windows Vista or newer.
         End If
         ExtractByShell = lRet
     End Function
+
+
     Private Function ExtractByShellSimplfied(pszZip As String, pszDest As String) As Long
         If PathFileExistsW(StrPtr(pszZip)) = 0 Then
             ExtractByShellSimplfied = ERROR_FILE_NOT_FOUND
