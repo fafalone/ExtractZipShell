@@ -4,6 +4,7 @@ Just a code snippet that shows a simple way to unzip...
 
 The simplified method is shorter, but the original would make it easier for you to only extract certain files.
 
+This is the complete code, just requires enabling my "Windows Development Library for twinBASIC" (WinDevLib) package in References->Available packages.
 
 ```vba
     Private Function ExtractByShell(pszZip As String, pszDest As String) As Long
